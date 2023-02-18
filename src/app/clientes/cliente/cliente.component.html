@@ -1,0 +1,19 @@
+<h3>Clientes</h3>
+<hr>
+<ul>
+    <li>Cliente - 20</li>
+    <li>Cliente - 25</li>
+    <li>Cliente - 26</li>
+</ul>
+
+<h3>Agregar a {{ nuevoCliente.nombre}} </h3>
+<hr>
+<div style="width: 50%;">
+    <form (ngSubmit)="agregar()">
+        <input type="text" placeholder="Nombre" name="nombre" [(ngModel)]="nuevoCliente.nombre">
+        <input type="number" placeholder="Edad" name="edad" [(ngModel)]="nuevoCliente.edad">
+        <button>
+            Agregar
+        </button>
+    </form>
+</div>

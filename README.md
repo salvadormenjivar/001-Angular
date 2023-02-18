@@ -25,3 +25,13 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+# Crear un componente de forma automática
+* ng generate component alumnos/lista
+* ng g c alumnos/lista
+
+Sin archivo spec para pruebas:
+* ng g c clientes/cliente --skip-tests   
+
+# Crear un módulo de forma automática
+* ng g m clientes

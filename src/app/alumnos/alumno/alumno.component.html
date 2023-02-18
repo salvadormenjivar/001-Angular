@@ -1,0 +1,23 @@
+<h1>{{ nombre }}</h1>
+<dl>
+    <td>Nombre: </td>
+    <dd>{{ nombre   }}</dd>
+
+    <td>Edad: </td>
+    <dd>{{ edad }}</dd>
+
+    <td>Llamada a función: </td>
+    <dd>{{ mostrarInformacion() }}</dd>
+
+    <!--Cuando llamamos a un get no es necesario 
+    agregar parentesis-->
+    <td>Llamada a get:</td>
+    <dd>{{ obtenerCapitalizado }}</dd>
+</dl>
+<button (click) = "cambiarNombre()">
+    Cambiar nombre
+</button>
+<button (click)="cambiarEdad()">
+    Cambiar edad
+</button>
+

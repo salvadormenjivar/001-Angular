@@ -1,0 +1,24 @@
+<h1>Lista de alumnos</h1>
+<hr>
+<div *ngIf=" alumnosBorrados.length !== 0; else arregloVacio">
+    <h3>Alumnos borrados</h3>
+    <ul>
+        <li *ngFor="let alumnoBorrado of alumnosBorrados; let i = index">
+            {{ i + 1 }} - {{ alumnoBorrado }}       
+        </li>   
+    </ul>
+</div>
+
+<ng-template #arregloVacio>
+    <h4>No se han borrado alumnos aún</h4>
+</ng-template>
+
+<button (click)="borrarAlumno()">
+    Borrar alumno
+</button>
+
+<ul>
+    <li *ngFor="let alumno of alumnos; let i = index">
+        {{ i + 1 }} - {{ alumno }}       
+    </li>   
+</ul>
